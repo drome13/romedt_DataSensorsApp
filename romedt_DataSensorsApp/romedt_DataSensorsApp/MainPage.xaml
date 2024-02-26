@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="romedt_DataSensorsApp.MainPage">
+
+    <StackLayout BackgroundColor="#990005">
+        <Frame BackgroundColor="black"  BorderColor="red">
+            <Label Text="Android Geolocator" FontSize="Title"  TextColor="red" HorizontalTextAlignment="center"></Label>
+        </Frame>
+        <Label Text="Name:" TextColor="white" FontSize="Body"/>
+        <Entry x:Name="Name_Entry"/>
+        <Label Text="Email:" TextColor="white" FontSize="Body"/>
+        <Entry x:Name="Email_Entry"/>
+        <Button x:Name="btnLocate" Margin="0,10,0,0" Text="Locate"
+                        Clicked="btnLocate_Clicked"
+                        BackgroundColor="black"
+                        BorderColor="red"
+                        BorderWidth="1.5"
+                        TextColor="red" />
+        <Label x:Name="labelResult" Text="Locating...." TextColor="white" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand"/>
+        <Button x:Name="btnSubmit" Margin="0,10,0,0" Text="Submit"
+                        Clicked="btnSubmit_Clicked"
+                        BackgroundColor="black"
+                        BorderColor="red"
+                        BorderWidth="1.5"
+                        TextColor="red" />
+        <Label x:Name="labelSubmit" TextColor="white" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand"></Label>
+    </StackLayout>
+</ContentPage>
